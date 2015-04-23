@@ -1,0 +1,104 @@
+body {
+  background-color: #920000;
+  text-align: center;
+  font-family: GoT; /**************************************************************************************************************/
+}
+
+@font-face {
+    font-family: GoT;
+    src: url(../fonts/GameofThrones.ttf);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.generateOption{
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column;
+  width: 460px;
+  height: 276px;
+  margin: 10px;
+  font-size: 2em;
+  color: #6c2123;
+}
+.background{
+  background-color:#dca76c;
+  padding: 5px;
+}
+
+#header{
+  background-color: #dca76c;
+  color: #6c2123;
+  padding: 10px;
+  font-size: 3em;
+}
+
+h1{
+  border-bottom: 3px solid #dca76c;
+  width: 1000px;
+  display: block;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  color: #1b1812;
+}
+
+form{
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  padding: 10px;
+  background-color: #dca76c;
+  color: #6c2123;
+  width: 350px;
+  }
+  
+table{
+    margin: auto;
+}
+
+ul{
+  list-style-type: none;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+li{
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  background-color: #dca76c;
+  width: 1000px;
+  
+}
+
+td {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p{
+  font-family: "Times New Roman", Times, serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.inputTitle{
+  color: #6c2123;
+}
+
+#generateText{
+  background-image: url("../images/book3.jpg");
+}
+
+#generatePeople{
+  background-image: url("../images/army.jpg");
+}
