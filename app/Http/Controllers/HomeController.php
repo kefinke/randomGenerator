@@ -16,6 +16,7 @@ class HomeController extends Controller {
 	public function postPeople() {
 		$error = "Error: input must be an integer between 1 and 10";
 		$number = Request::input('number');
+		$number = floor($number);
 		if($number >= 1 && $number <= 10){
 		$birthday = Request::input('birthday');
 		$profile = Request::input('profile');
@@ -34,6 +35,7 @@ class HomeController extends Controller {
 	public function postText() {
 		$error = "Error: input must be an integer between 1 and 10";
 		$number = Request::input('number');
+		$number = floor($number);
 		if($number >= 1 && $number <= 10){
 			$paragraphs = $this->getParagraphs($number);
 			return view('resultsText')->with('paragraphs', $paragraphs)->with('number', $number);
@@ -80,13 +82,4 @@ class HomeController extends Controller {
 		$names = ["Kelly", "Alex", "Kiara", "Justin"];
 		return $this->getRandomList($number, $names);
 	}
-	
-	//public function getRandomList($number, $array){
-	//	$return_list = array();
-	//	$max = sizeof($array);
-	//	for($i = 0; $i < $number; $i++){
-	//		array_push($return_list, $array[rand(0, $max - 1)]);
-	//	}
-	//	return $return_list;
-	//}
 }
